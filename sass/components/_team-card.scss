@@ -1,0 +1,40 @@
+.team-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 32px;
+}
+
+.team_card {
+  margin: 0 15px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--color-text-alt);
+
+  @media screen and (max-width: $breakpoint-desctop) {
+    width: calc((100% / 2) - 30px);
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    width: 100%;
+  }
+}
+
+.team-name {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.1875;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-position {
+  line-height: 1.1875;
+  color: var(--color-text-light);
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: 0.03em;
+}

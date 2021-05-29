@@ -1,0 +1,38 @@
+.header {
+  border-bottom: 1px solid var(--color-border);
+
+  & .logo {
+    margin-right: 93px;
+    padding: 16px 0;
+
+    @media screen and (max-width: $breakpoint-desctop) {
+      margin-right: 88px;
+    }
+  }
+}
+
+.nav-flex {
+  display: flex;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.1923;
+  letter-spacing: 0.03em;
+  color: inherit;
+
+  @media screen and (max-width: $breakpoint-desctop) {
+    font-size: 24px;
+    line-height: 1.1666;
+  }
+
+  &_blue {
+    color: var(--color-highlight);
+  }
+}

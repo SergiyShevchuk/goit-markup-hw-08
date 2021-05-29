@@ -1,0 +1,89 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--color-text-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 0;
+  height: 1px;
+  border: 0;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: $width-desctop;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: $breakpoint-desctop) {
+    max-width: $width-tablet;
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    max-width: $width-mobile;
+  }
+}
+
+.flex-container {
+  display: flex;
+  align-items: baseline;
+
+  @media screen and (max-width: $breakpoint-desctop) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  @media screen and (max-width: $breakpoint-desctop) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.d-flex {
+  display: flex;
+  margin: 0 -15px;
+
+  @media screen and (max-width: $breakpoint-desctop) {
+    flex-wrap: wrap;
+  }
+}
+
+.section_tittle {
+  font-size: 36px;
+  line-height: 1.1666;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+  transition: color var(--animation);
+}

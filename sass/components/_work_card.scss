@@ -1,0 +1,41 @@
+.box-work-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--color-background-light);
+  margin-bottom: 30px;
+}
+
+.work-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.work-list-item {
+  margin: 0 15px;
+
+  @media screen and (max-width: $breakpoint-desctop) {
+    width: calc((100% / 2) - 30px);
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    width: 100%;
+  }
+}
+
+.work_description {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--color-text-light);
+}
+.work_title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

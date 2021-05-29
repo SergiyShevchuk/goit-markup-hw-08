@@ -1,0 +1,53 @@
+.section-dark {
+  max-width: 1600px;
+  margin: 0 auto;
+  flex-direction: column;
+  display: flex;
+  height: 600px;
+  background: var(--color-background-dark);
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../img/bg-image/desktop-bg@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: $breakpoint-desctop) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../img/bg-image/tablet-bg@1x.jpg");
+  }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../img/bg-image/mobile-bg@1x.jpg");
+  }
+}
+
+.page-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 44px;
+  line-height: 1.3636;
+  color: var(--color-text-alt);
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $breakpoint-desctop) {
+    font-size: 26px;
+  }
+}
