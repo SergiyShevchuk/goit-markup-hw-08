@@ -13,11 +13,10 @@
 }
 
 .work-list-item {
-  margin: 0 15px;
+  margin: 15px;
 
   @media screen and (max-width: $breakpoint-desctop) {
     width: calc((100% / 2) - 30px);
-    margin-bottom: 30px;
   }
 
   @media screen and (max-width: $breakpoint-tablet) {
@@ -38,4 +37,8 @@
   line-height: 1.1428;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    text-align: center;
+  }
 }

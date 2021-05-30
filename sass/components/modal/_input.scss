@@ -28,6 +28,10 @@
   &:nth-child(5) {
     margin-bottom: 20px;
   }
+
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
 }
 
 .form-data {

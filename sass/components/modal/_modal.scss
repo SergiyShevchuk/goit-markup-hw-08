@@ -40,8 +40,8 @@
   }
 
   @media screen and (max-width: $breakpoint-tablet) {
-    width: 95%;
     max-height: 95vh;
+    max-width: 95vw;
   }
 }
 
@@ -84,6 +84,5 @@
 }
 
 .form-btn {
-  margin-top: 29px;
   transition: background-color var(--animation);
 }
